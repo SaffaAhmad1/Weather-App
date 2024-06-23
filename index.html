@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <title>Weather</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+</head>
+<body>
+    <div class="site-content">
+        <div class="site-header">
+            <nav class="navbar navbar-expand-lg">
+                <div class="container">
+                  <a class="navbar-brand" href="#">
+                    <img src="images/logo.png" alt="">
+                    <div class="logo-content">
+                      <h1>Weather</h1>
+                      <span>tagline goes here</span>
+                    </div>
+                  </a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto ">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">News</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Live cameras</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Photos</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                      </li>
+                    </ul>
+                    
+                  </div>
+                </div>
+              </nav>
+        </div>
+
+        <div class="hero">
+          <div class="container">
+            <form class="find-location">
+              <input type="text" placeholder="Find your location..." id="search">
+              <input type="button" value="Find" id="submit">
+            </form>
+          </div>
+        </div>
+        
+
+        <div class="forecast-table">
+          <div class="container">
+            <div class="forecast-container" id="forecast">
+              <div class="today forecast">
+                <div class="forecast-header d-flex justify-content-between" id="today">
+                  <div id="nameToday">Sunday</div>
+                  <span>
+                    <span id="numToday" class="m-0">23</span>
+                    <span id="munthToday" class="m-0">June</span>
+                  </span>
+                </div>
+                <div class="forecast-content">
+                  <div id="todayLocation" class="location">Cairo</div>
+                <div class="degree">
+                  <div id="todayTemp" class="num">37.2<sup>o</sup>c</div>
+                  <div class="forecast-icon">
+                    <img id="imgTemp" src="images/113.png" alt="" width="90">
+                  </div>
+                </div>
+                <div id="textTemp" class="custom">sunny</div>
+                <img src="images/icon-umberella.png" alt=""><span id="humidity"> 20%</span>
+                <img src="images/icon-wind.png" alt=""><span id="wind"> 18km/h</span>
+                <img src="images/icon-compass.png" alt=""><span id="windDirection"> East</span>
+                </div>
+              </div>
+              
+              <div class="forecast">
+                <div class="forecast-header">
+                  <div class="day nextDay">Monday</div>
+                </div>
+                <div class="forecast-content">
+                  <div class="forecast-icon">
+                    <img class="nextImgTemp" src="images/113.png" alt="" width="48">
+                  </div>
+                  <div class="degree maxDegree">41.3<sup>o</sup>c</div>
+                  <span class="minDegree">29.3<sup>o</sup>c</span>
+                  <div class="custom condText">sunny</div>
+                </div>
+              </div>
+              <div class="forecast">
+                <div class="forecast-header">
+                  <div class="day nextDay">Tuesday</div>
+                </div>
+                <div class="forecast-content">
+                  <div class="forecast-icon">
+                    <img class="nextImgTemp" src="images/113.png" alt="" width="48">
+                  </div>
+                  <div class="degree maxDegree">40.8<sup>o</sup>c</div>
+                  <span class="minDegree">27.8<sup>o</sup>c</span>
+                  <div class="custom condText">sunny</div>
+                </div>
+              </div>
+              </div>
+              
+              
+            </div>
+          
+        </div>
+
+        <footer>
+          <div class="container">
+            <div class="row">
+              <div class="col-md-8">
+                <form>
+                  <input type="text" placeholder="Enter your email to subscribe...">
+                  <input type="submit" value="Subscribe">
+                </form>
+              </div>
+              <div class="col-md-3 offset-1">
+                <div class="social-links">
+                  <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                  <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                  <a href="#"><i class="fa-brands fa-google-plus-g"></i></a>
+                  <a href="#"><i class="fa-brands fa-pinterest"></i></a>
+                </div>
+              </div>
+            </div>
+
+            <p>Copyright 2014 Company name. Designed by Themezy. All rights reserved</p>
+          </div>
+        </footer>
+    </div>
+    
+
+    
+
+
+
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
