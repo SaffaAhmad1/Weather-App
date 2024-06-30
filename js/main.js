@@ -9,7 +9,7 @@ let humidity = document.getElementById("humidity")
 let wind = document.getElementById("wind")
 let windDirection = document.getElementById("windDirection")
 
-let nextDay = document.getElementsByClassName("nextDay")
+let nextDay = document.getElementsByClassName("nextDay");
 let nextImgTemp = document.getElementsByClassName("nextImgTemp")
 let maxDegree = document.getElementsByClassName("maxDegree")
 let minDegree = document.getElementsByClassName("minDegree")
@@ -43,8 +43,7 @@ function displayNextDayData(data){
     console.log(forecastData);
     for(let i =0 ; i < 2 ; i++){
         let nextDate = new Date(forecastData[i+1].date)
-        console.log(nextDate);
-        nextDay.innerHTML = nextDate.toLocaleDateString("en-us" , {weekday:"long"})
+        nextDay[i].innerHTML = nextDate.toLocaleString('en-us',{weekday:'long'});
         maxDegree[i].innerHTML = forecastData[i+1].day.maxtemp_c + `<sup>o</sup>c`
         minDegree[i].innerHTML = forecastData[i+1].day.mintemp_c + `<sup>o</sup>c`
         condText[i].innerHTML = forecastData[i+1].day.condition.text
